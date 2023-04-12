@@ -1,0 +1,14 @@
+.catalog-prize__wrapper {
+  width: 280px;
+  min-height: 289px;
+  margin: 0 auto;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.catalog-prize__title {
+  @include title;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-default-white;
+}

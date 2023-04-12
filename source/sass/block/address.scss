@@ -1,0 +1,39 @@
+.address__wrapper {
+  width: 320px;
+  background-color: $color-bg-white;
+}
+
+.address__wrapper--form {
+  background-color: $color-bg-gray;
+}
+
+.address__wrapper-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.address__wrapper--catalog {
+  background-color: $color-bg-gray;
+}
+
+.address__title {
+  font-family: $oswald400;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-title1;
+}
+
+.address__description {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-desc;
+}
+
+.address__map {
+  width: 320px;
+  background-color: $color-bg-white;
+}

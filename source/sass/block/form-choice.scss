@@ -1,0 +1,8 @@
+.form-choice__list {
+  @include list-reset;
+  font-family: $oswald400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-desc;
+}

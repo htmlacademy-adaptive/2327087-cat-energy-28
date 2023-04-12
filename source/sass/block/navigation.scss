@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navigation__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navigation__link {
+  display: block;
+  color: inherit;
+  padding: 22px 20px 24px;
+  border-top: 1px solid $color-border-list;
+}
+
+//ОТОБРАЗИТЬ МЕНЮ НАВИГАЦИИ//
+.navigation__list--close {
+  display: none;
+}
