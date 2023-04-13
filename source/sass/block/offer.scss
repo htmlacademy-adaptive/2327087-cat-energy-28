@@ -1,0 +1,55 @@
+.offer__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 280px;
+}
+
+.offer__review {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 320px;
+  min-height: 302px;
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.offer__title {
+  @include title;
+  font-family: $oswald400;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  color: $color-default-white;
+}
+
+.offer__about {
+  @include title;
+  font-family: $oswald400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  color: $color-default-white;
+}
+
+//Пока нет картинки резерв места //
+.offer__logo {
+  height: 270px;
+}
+
+.offer__button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.offer__button--wrapper {
+  width: 280px;
+  margin-bottom: 20px;
+}

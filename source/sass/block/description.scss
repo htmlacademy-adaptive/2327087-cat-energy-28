@@ -1,0 +1,23 @@
+.description__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.description__title {
+  @include title;
+  font-family: $oswald400;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 40px;
+  color: $color-default-black;
+}
+
+.description__list {
+  @include list-reset;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-desc;
+  margin-bottom: 49px;
+}
