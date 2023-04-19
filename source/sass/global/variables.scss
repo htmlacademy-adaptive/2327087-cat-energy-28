@@ -1,25 +1,27 @@
-$second-font: "Lato", sans-serif;
-$color-white: #ffffff;
-
-
-//FONTS//
-$oswald400: "Oswald", "Arial", sans-serif;
+//FONTS\\
 $lato400: "Lato", "Arial", sans-serif;
+$oswald400: "Oswald", $lato400;
 
-//COLORS//
+//COLORS\\
 
-//background//
+//background
 $color-bg-white: #ffffff;
 $color-bg-gray: #f2f2f2;
 $color-bg-grey: #eaeaea;
 $color-bg-green: #68b738;
 
-//text//
+//text
 $color-default-black: #000000;
 $color-default-white: #ffffff;
 $color-title1: #111111;
 $color-title2: #222222;
 $color-desc: #444444;
 
-//Borders//
+//Borders
 $color-border-list: #e6e6e6;
+$color-border-list2: #d9d9d9;
+
+//VIEWPORTS\\
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
