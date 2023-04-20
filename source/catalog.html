@@ -14,31 +14,33 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo logo" href="index.html">
-        <img class="header__image-pic" src="./img/header/logo-mobile.svg" width="34" height="34" alt="Логотип Cat Energy.">
-      </a>
-      <a class="header__logo logo" href="index.html">
-        <img class="header__image-slogan" src="./img/header/logo-cat-energy.svg" width="101" height="18"
-          alt="Логотип Cat Energy.">
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню навигации.</span>
-      </button>
+    <div class="header__container">
+      <nav class="header__navigation-logo">
+        <a class="header__navigation-icon" href="index.html">
+          <img class="header__navigation-image" src="./img/header/logo-mobile.svg" width="34" height="34" alt="Логотип Cat Energy.">
+        </a>
+        <a class="header__navigation-icon" href="index.html">
+          <img class="header__navigation-slogan" src="./img/header/logo-cat-energy.svg" width="101" height="18"
+            alt="Логотип Cat Energy.">
+        </a>
+        <button class="header__navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню навигации.</span>
+        </button>
+      </nav>
+      <nav class="header__navigation-menu">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header__navigation navigation">
-      <ul class="navigation__list navigation__list--close">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
 
@@ -208,6 +210,13 @@
               <a class="button" href="#!">ЗАКАЗАТЬ</a>
             </div>
           </li>
+          <li class="main-catalog__item">
+            <section class="catalog-more">
+              <h2 class="catalog-more__title">Показать еще 100500 товаров</h2>
+              <p class="catalog-more__about">На самом деле вкусов гораздо больше!</p>
+              <a class="catalog-more__button button catalog-more__button--all" href="#!">Показать все</a>
+            </section>
+          </li>
         </ul>
       </div>
     </section>
@@ -221,48 +230,40 @@
     <section class="extra-goods">
       <div class="extra-goods__wrapper">
         <h2 class="extra-goods__title">Дополнительные товары</h2>
-        <ul class="extra-goods__list">
-          <li class="extra-goods__list">
-            <table class="extra-goods__table">
-              <caption class="extra-goods__caption">Сахарозаменитель</caption>
-              <tr class="extra-goods__row">
-                <td class="extra-goods__data">1 упаковка (100 г)</td>
-                <td class="extra-goods__data">200 ₽</td>
-              </tr>
-            </table>
-            <a class="extra-goods__button button" href="#!">Заказать</a>
-          </li>
-          <li class="extra-goods__list">
-            <table class="extra-goods__table">
-              <caption class="extra-goods__caption">Питьевая вода</caption>
-              <tr class="extra-goods__row">
-                <td class="extra-goods__data">5 литров</td>
-                <td class="extra-goods__data">50 ₽</td>
-              </tr>
-            </table>
-            <a class="extra-goods__button button" href="#!">Заказать</a>
-          </li>
-          <li class="extra-goods__list">
-            <table class="extra-goods__table">
-              <caption class="extra-goods__caption">Молоко</caption>
-              <tr class="extra-goods__row">
-                <td class="extra-goods__data">1 литр</td>
-                <td class="extra-goods__data">100 ₽</td>
-              </tr>
-            </table>
-            <a class="extra-goods__button button" href="#!">Заказать</a>
-          </li>
-          <li class="extra-goods__list">
-            <table class="extra-goods__table">
-              <caption class="extra-goods__caption">Витамины</caption>
-              <tr class="extra-goods__row">
-                <td class="extra-goods__data">1 упаковка (30 г)</td>
-                <td class="extra-goods__data">300 ₽</td>
-              </tr>
-            </table>
-            <a class="extra-goods__button button" href="#!">Заказать</a>
-          </li>
-        </ul>
+        <table class="extra-goods__table" aria-label="Дополнительные товары">
+          <tr class="extra-goods__row">
+            <td class="extra-goods__row extra-goods__row--caption">Сахарозаменитель</td>
+            <td class="extra-goods__data">1 упаковка (100 г)</td>
+            <td class="extra-goods__data">200 <abbr title="Рублей">₽</abbr></td>
+            <td>
+              <a class="extra-goods__button button" href="#!">Заказать</a>
+            </td>
+          </tr>
+          <tr class="extra-goods__row">
+            <td class="extra-goods__row extra-goods__row--caption">Питьевая вода</td>
+            <td class="extra-goods__data">5 литров</td>
+            <td class="extra-goods__data">50 <abbr title="Рублей">₽</abbr></td>
+            <td>
+              <a class="extra-goods__button button" href="#!">Заказать</a>
+            </td>
+          </tr>
+          <tr class="extra-goods__row">
+            <td class="extra-goods__row extra-goods__row--caption">Молоко</td>
+            <td class="extra-goods__data">1 литр</td>
+            <td class="extra-goods__data">100 <abbr title="Рублей">₽</abbr></td>
+            <td>
+              <a class="extra-goods__button button" href="#!">Заказать</a>
+            </td>
+          </tr>
+          <tr class="extra-goods__row">
+            <td class="extra-goods__row extra-goods__row--caption">Витамины</td>
+            <td class="extra-goods__data">1 упаковка (30 г)</td>
+            <td class="extra-goods__data">300 <abbr title="Рублей">₽</abbr></td>
+            <td>
+              <a class="extra-goods__button button" href="#!">Заказать</a>
+            </td>
+          </tr>
+        </table>
       </div>
     </section>
     <section class="catalog-prize">
@@ -294,39 +295,40 @@
 
 
   <footer class="footer">
-    <section class="footer__contacts">
-      <h2 class="visually-hidden">Контактные данные для связи</h2>
-      <div class="footer__wrapper">
-        <a class="footer__logo logo" href="#!">
-          <img class="footer__image-slogan" src="./img/logo-cat-energy.svg" width="101" height="18"
-            alt="Логотип Cat Energy.">
-        </a>
-        <ul class="footer__social social-list">
-          <li class="social-list__item">
-            <a class="button-a social-list__link" href="https://vk.com/htmlacademy" rel="nofollow noreferer">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="button-a social-list__link" href="https://www.youtube.com/user/htmlacademyru" rel="nofollow noreferer">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="button-a social-list__link" href="https://t.me/htmlacademy" rel="nofollow noreferer">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__academy">
-          <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="footer__academy-title">HTML academy</span>
-            <img class="footer__academy-image" src="https://htmlacademy.ru/intensive/adaptive" alt="Ссылка на сайт HTML academy.">
-          </a>
+    <div class="footer__container">
+      <section class="footer__contacts">
+        <h2 class="visually-hidden">Контактные данные для связи</h2>
+        <div class="footer__contacts-wrapper">
+          <ul class="footer__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__logo" href="#!">
+                <img class="footer__image-slogan" src="./img/logo-cat-energy.svg" width="128" height="24"
+                  alt="Логотип Cat Energy.">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://vk.com/htmlacademy" rel="nofollow noreferer">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+              <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" rel="nofollow noreferer">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+              <a class="social-list__link" href="https://t.me/htmlacademy" rel="nofollow noreferer">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="social-list__academy-title">HTML academy</span>
+                <svg class="social-list__academy-image" width="27" height="34"></svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

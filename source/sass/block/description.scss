@@ -1,6 +1,15 @@
 .description__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .description__title {
@@ -16,8 +25,82 @@
 
 .description__list {
   @include list-reset;
+  display: grid;
+  grid-gap: 20px;
   font-size: 14px;
   line-height: 18px;
   color: $color-desc;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 137px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    grid-gap: 94px;
+  }
+}
+
+.description__item {
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 31px;
+    height: 280px;
+    align-content: center;
+  }
+}
+
+.description__item--leaf {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
+}
+
+.description__item--water {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
+}
+
+.description__item--tableware {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
+}
+
+.description__item--clock {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
 }

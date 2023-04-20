@@ -4,27 +4,58 @@
 }
 
 .feedback-form__container {
-  width: 320px;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .feedback-form__wrapper {
   width: 280px;
   margin: 0 auto;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .feedback-form__title {
   @include title;
+  margin-bottom: 37px;
   font-family: $oswald400;
+  text-align: left;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .feedback-form__about {
   @include title;
+  margin-bottom: 39px;
   font-family: $oswald400;
+  text-align: left;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }

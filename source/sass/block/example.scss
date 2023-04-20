@@ -1,11 +1,34 @@
-.example__wrapper {
+.example__container {
+  min-height: 659px;
   width: 320px;
   background-color: $color-bg-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    background-color: $color-bg-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    min-height: 462px;
+    background-color: $color-bg-gray;
+  }
 }
 
 .example__description {
-  margin: 0 auto;
-  width: 280px;
+  padding: 25px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    padding-left: 110px;
+    display: block;
+  }
 }
 
 .example__title {
@@ -14,32 +37,87 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  padding-left: 20px;
   text-align: left;
   color: $color-default-black;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
+    padding-left: 110px;
+    background-color: $color-bg-white;
+  }
 }
 
 .example__about {
+  grid-column: 1 / -1;
   font-size: 14px;
   line-height: 18px;
   color: $color-desc;
 }
 
 .example__results {
-  margin: 0 auto;
-  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 366px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.example__list {
+  border: 1px solid #cdcdcd;
+  width: 124px;
+  height: 56px;
+}
+
+.example__definition {
+  margin: 0;
 }
 
 .example__count {
   @include title;
+  grid-column: 1 / -1;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .example__slider {
   width: 320px;
   background-color: $color-bg-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 512px;
+    position: absolute;
+    transform: translate(800px, -420px);
+  }
+}
+
+.example__slider-item {
+  @include list-reset;
 }
