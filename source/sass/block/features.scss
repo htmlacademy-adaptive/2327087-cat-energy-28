@@ -43,6 +43,7 @@
   display: grid;
   grid-template-columns: min-content auto;
   grid-gap: 19px;
+  margin-bottom: 23px;
   align-items: center;
   justify-content: center;
   font-family: $oswald400;
@@ -76,24 +77,42 @@
 }
 
 .features__about {
+  @include reset;
   font-size: 14px;
   line-height: 18px;
   width: 227px;
   height: 90px;
+  margin-bottom: 23px;
+
+  &--line::after {
+    display: block;
+    width: 230px;
+    height: 1px;
+    margin-top: 23px;
+    background: #d9d9d9;
+    content: "";
+  }
 }
 
 .features__link {
-  $oswald400: "Oswald", $lato400;
+  margin-top: 19px;
+  font-family: $oswald400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $color-default-black;
 
-  &--line::before {
-    display: block;
-    width: 240px;
-    height: 1px;
-    background: #d9d9d9;
-    content: "";
+  &:hover {
+    .features__link-svg {
+      transform: translateX(6px) scaleX(1.5);
+    }
   }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.features__link-svg {
+  margin-left: 15px;
 }

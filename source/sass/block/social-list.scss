@@ -1,11 +1,73 @@
 .social-list__item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  border-bottom: 1px solid $color-border-list2;
+
+  &:first-child {
+    padding: 40px 0 20px;
+  }
+
+  &--grid {
+    padding: 11px;
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    justify-content: center;
+    align-items: center;
+    column-gap: 14px;
+  }
+
+  &:last-child {
+    padding: 10px 0 30px;
+  }
 }
 
 .social-list__academy-title {
   font-size: 16px;
   line-height: 19px;
+  text-transform: capitalize;
+}
+
+.social-list__link--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: $color-desc;
+}
+
+.social-list__logo {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.social-list__link {
+  color: $color-desc;
+
+  &:hover {
+    color: $color-bg-green;
+  }
+
+  &:focus {
+    color: $color-bg-green;
+  }
+
+  &:active {
+    color: $color-bg-green;
+    opacity: 0.5;
+  }
+}
+
+.social-list__link:hover span {
+  color: $color-bg-green;
+}
+
+.social-list__svg {
+  display: block;
+  padding: 10px;
 }

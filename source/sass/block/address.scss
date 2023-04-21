@@ -20,7 +20,8 @@
   width: 280px;
   margin: 0 auto;
   min-height: 112px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 
   @media (min-width: $tablet-width) {

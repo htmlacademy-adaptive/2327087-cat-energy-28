@@ -16,15 +16,8 @@
 }
 
 .footer__contacts-wrapper {
-  padding: 40px 20px 0;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 55px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 66px 110px;
-  }
+  width: 280px;
+  margin: 0 auto;
 }
 
 .footer__social {
