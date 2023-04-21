@@ -1,4 +1,11 @@
-.form-comment__field-label {
+.form-comment {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form-comment__legend {
+  margin-bottom: 37px;
   font-family: $oswald400;
   font-size: 24px;
   line-height: 26px;
@@ -7,5 +14,6 @@
 
 .form-comment__field-control {
   width: 280px;
-  height: 150.52px;
+  height: 150px;
+  margin-bottom: 22px;
 }

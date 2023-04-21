@@ -3,19 +3,16 @@
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/base.scss";
-@import "./global/visually-hidden.scss";
 
 //BLOCK //
+@import "./block/visually-hidden.scss";
 @import "./block/header.scss";
-@import "./block/logo.scss";
-@import "./block/navigation.scss";
 @import "./block/offer.scss";
 @import "./block/button.scss";
 @import "./block/features.scss";
 @import "./block/main-wrapper.scss";
 @import "./block/description.scss";
 @import "./block/example.scss";
-@import "./block/slider-example.scss";
 @import "./block/address.scss";
 @import "./block/map-invitation.scss";
 @import "./block/footer.scss";

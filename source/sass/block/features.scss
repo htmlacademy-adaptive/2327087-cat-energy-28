@@ -3,22 +3,76 @@
   justify-content: center;
   grid-gap: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .features__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
   width: 280px;
   min-height: 266px;
   background-color: $color-bg-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+  }
 }
 
 .features__title {
   @include title;
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 19px;
+  align-items: center;
+  justify-content: center;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $color-default-black;
+
+  &--img-slim::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("#!");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
+
+  &--img-pro::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("#!");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
 }
 
 .features__about {
@@ -26,4 +80,20 @@
   line-height: 18px;
   width: 227px;
   height: 90px;
+}
+
+.features__link {
+  $oswald400: "Oswald", $lato400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-default-black;
+
+  &--line::before {
+    display: block;
+    width: 240px;
+    height: 1px;
+    background: #d9d9d9;
+    content: "";
+  }
 }

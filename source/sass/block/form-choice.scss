@@ -1,5 +1,15 @@
+.form-choise {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / -1;
+  }
+}
+
 .form-choice__list {
   @include list-reset;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 13px;
+  margin-bottom: 13px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;

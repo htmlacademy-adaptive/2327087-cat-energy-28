@@ -6,6 +6,17 @@
   align-items: center;
   align-content: center;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1220px;
+    grid-template-columns: min-content min-content min-content;
+    margin-bottom: 82px;
+  }
 }
 
 .offer__review {
@@ -16,6 +27,16 @@
   width: 320px;
   min-height: 302px;
   background: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 260px;
+    background: $color-default-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+  }
 }
 
 .offer__title {
@@ -27,6 +48,10 @@
   padding-top: 27px;
   margin-bottom: 25px;
   color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    color: $color-default-black;
+  }
 }
 
 .offer__about {
@@ -37,19 +62,36 @@
   text-transform: uppercase;
   margin-bottom: 29px;
   color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    color: $color-default-black;
+  }
 }
 
 //Пока нет картинки резерв места //
 .offer__logo {
   height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 609px;
+    background: $color-default-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    background: $color-bg-green;
+  }
 }
 
 .offer__button {
+  width: 280px;
   font-size: 14px;
   line-height: 18px;
-}
-
-.offer__button--wrapper {
-  width: 280px;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+  }
 }
