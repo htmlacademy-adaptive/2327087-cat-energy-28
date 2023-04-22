@@ -29,7 +29,8 @@
   background-color: $color-bg-white;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
+    padding: 0 30px 0;
+    max-width: 708px;
     min-height: 52px;
     display: flex;
     flex-direction: row;
