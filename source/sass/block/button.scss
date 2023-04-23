@@ -16,6 +16,10 @@
     background-color: $color-hv-green;
   }
 
+  &:focus {
+    background-color: $color-hv-green;
+  }
+
   &:active {
     background-color: $color-hv-green;
     color: rgba(255, 255, 255, 0.3);
