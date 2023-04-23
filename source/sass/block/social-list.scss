@@ -3,6 +3,10 @@
 
   &:first-child {
     padding: 40px 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   &--grid {
@@ -12,10 +16,22 @@
     justify-content: center;
     align-items: center;
     column-gap: 14px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   &:last-child {
     padding: 10px 0 30px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 0;
   }
 }
 
