@@ -25,9 +25,10 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    background-color: $color-bg-gray;
-    width: 768px;
-    display: flex;
+    width: 628px;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 172px 160px;
     justify-content: space-between;
   }
 
@@ -51,6 +52,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-title1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__description {
@@ -58,6 +64,11 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-desc;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .address__map {
@@ -71,4 +82,14 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
   }
+}
+
+.address__description br {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+  @media (min-width: $tablet-width) {
+    display: initial;
+  }
+
 }
