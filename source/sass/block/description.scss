@@ -135,9 +135,9 @@
       margin-bottom: 31px;
       width: 80px;
       height: 80px;
-      }
     }
   }
+}
 
 .description__item--clock {
   &::before {
@@ -171,13 +171,13 @@
       position: absolute;
       display: block;
       width: 136px;
-      font-family: Oswald, Lato, Arial, sans-serif;
+      font-family: "Oswald", "Lato", "Arial", sans-serif;
       font-size: 280px;
       line-height: 280px;
       color: rgb(242, 242, 242);
       transform: translate(9px, -222px);
       content: counter(verse);
-      right: 0px;
+      right: 0;
       z-index: -1;
     }
   }
