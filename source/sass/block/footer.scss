@@ -21,7 +21,14 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    min-height: 147px;
+    min-height: 37px;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    min-height: 37px;
+    padding: 66px 110px;
   }
 }
 
@@ -33,7 +40,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

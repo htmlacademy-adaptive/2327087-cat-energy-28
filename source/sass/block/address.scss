@@ -18,25 +18,26 @@
 
 .address__wrapper-container {
   width: 280px;
-  margin: 0 auto;
-  min-height: 112px;
+  min-height: 60px;
+  padding: 26px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    min-height: 200px;
+    min-height: 87px;
+    padding: 56px 70px;
     display: grid;
     grid-template-columns: 172px 160px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 565px;
-    min-height: 198px;
+    width: 425px;
+    min-height: 86px;
     margin: 0;
-    padding: 0;
+    padding: 56px 60px 56px 80px;
     position: absolute;
     z-index: 1;
     background-color: $color-bg-white;
@@ -88,12 +89,3 @@
     width: 1440px;
   }
 }
-
-// .address__description br {
-//   @media (min-width: $mobile-width) {
-//     display: none;
-//   }
-//   @media (min-width: $tablet-width) {
-//     display: initial;
-//   }
-// }
