@@ -30,8 +30,26 @@
   }
 }
 
-.extra-goods__row--caption {
-  @include title;
+.extra-goods__list {
+  @include list-reset;
+  display: grid;
+}
+
+.extra-goods__item {
+  padding-bottom: 19px;
+  padding-top: 13px;
+  border-top: 1px solid $color-border-list4;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border-list4;
+  }
+}
+
+.extra-goods__table {
+  width: 100%;
+}
+
+.extra-goods__caption {
   font-family: $oswald400;
   font-weight: 400;
   font-size: 16px;
@@ -41,22 +59,7 @@
 }
 
 .extra-goods__row {
-  display: grid;
   font-size: 14px;
   line-height: 14px;
   color: $color-desc;
-
-  @media (min-width: $desktop-width) {
-    display: table-row;
-  }
-}
-
-.extra-goods__table {
-  display: grid;
-
-  @media (min-width: $desktop-width) {
-    display: table;
-    width: 896px;
-    min-height: 288px;
-  }
 }
