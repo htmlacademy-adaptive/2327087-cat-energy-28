@@ -12,6 +12,10 @@
       transform: translateX(-30px);
       background: $color-border-list;
       content: "";
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
     }
   }
 
@@ -51,7 +55,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 153px;
     row-gap: 37px;
-    margin-bottom: 0;
+    margin-bottom: 47px;
     counter-reset: verse 0;
   }
 
@@ -72,6 +76,7 @@
     height: 280px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     z-index: 1;
     gap: 0;
   }

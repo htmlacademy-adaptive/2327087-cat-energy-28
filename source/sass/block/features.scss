@@ -38,11 +38,14 @@
 
     &:last-child {
       margin-bottom: 45px;
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
     width: 570px;
     min-height: 374px;
   }

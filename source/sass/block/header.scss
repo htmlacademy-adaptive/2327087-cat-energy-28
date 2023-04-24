@@ -23,13 +23,12 @@
 
 .header__container {
   margin: 0 auto;
-  padding-bottom: 62px;
   max-width: 320px;
   min-height: 65px;
   background-color: $color-bg-white;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 62px;
     max-width: 768px;
     min-height: 52px;
     display: grid;
