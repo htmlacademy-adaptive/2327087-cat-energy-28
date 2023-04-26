@@ -34,6 +34,10 @@
     background: $color-border-list2;
     transform: translate(-20px, -31px);
     content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -57,7 +61,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
+    width: 708px;
+    grid-template-columns: 325px 325px;
     grid-gap: 60px;
   }
 
@@ -76,6 +81,27 @@
   padding-top: 11px;
   padding-bottom: 14px;
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 252px;
+    min-height: 390px;
+    padding: 0 39px 39px;
+    row-gap: 0;
+    background-color: $color-bg-gray;
+
+    &:last-child {
+      display: block;
+      background-color: $color-bg-white;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 180px;
+      min-height: 430px;
+      padding: 0 30px 40px 35px;
+    }
+  }
+
   &::before {
     position: absolute;
     width: 320px;
@@ -83,30 +109,51 @@
     background: $color-border-list3;
     transform: translate(-20px, -31px);
     content: "";
-  }
 
-  @media (min-width: $tablet-width) {
-    min-height: 511px;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .main-catalog__link-pic {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .main-catalog__link-title {
   grid-column: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .main-catalog__table {
   font-size: 12px;
   line-height: 16px;
   grid-column: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    justify-self: stretch;
+    font-family: $lato400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-desc;
+  }
 }
 
 .main-catalog__button {
   grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    justify-self: stretch;
+  }
 }
 
 .main-catalog__title {
@@ -117,4 +164,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-title2;
+
+  @media (min-width: $mobile-width) {
+    display: block;
+    width: 76px;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: center;
+    width: 145px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }

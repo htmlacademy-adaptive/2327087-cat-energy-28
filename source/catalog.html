@@ -30,10 +30,10 @@
         </button>
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
-            <a class="header__navigation-link header__navigation-link--checked" href="index.html">Главная</a>
+            <a class="header__navigation-link" href="index.html">Главная</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
+            <a class="header__navigation-link header__navigation-link--checked" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="header__navigation-item">
             <a class="header__navigation-link" href="form.html">Подбор программы</a>
@@ -54,7 +54,7 @@
               <img class="main-catalog__image" src="#!" width="50" height="50" alt="">
             </a>
             <a class="main-catalog__link-title" href="#!">
-              <span class="main-catalog__title">Cat Energy<br>PRO 500 г</span>
+              <span class="main-catalog__title">Cat Energy PRO 500 г</span>
             </a>
             <table class="main-catalog__table">
               <tr class="main-catalog__row">
@@ -79,7 +79,7 @@
               <img class="main-catalog__image" src="#!" width="50" height="50" alt="">
             </a>
             <a class="main-catalog__link-title" href="#!">
-              <span class="main-catalog__title">Cat Energy<br>1000 г</span>
+              <span class="main-catalog__title">Cat Energy 1000 г</span>
             </a>
             <table class="main-catalog__table">
               <tr class="main-catalog__row">
@@ -104,7 +104,7 @@
               <img class="main-catalog__image" src="#!" width="50" height="50" alt="">
             </a>
             <a class="main-catalog__link-title" href="#!">
-              <span class="main-catalog__title">Cat Energy<br>PRO 500 г</span>
+              <span class="main-catalog__title">Cat Energy PRO 500 г</span>
             </a>
             <table class="main-catalog__table">
               <tr class="main-catalog__row">
@@ -129,7 +129,7 @@
               <img class="main-catalog__image" src="#!" width="50" height="50" alt="">
             </a>
             <a class="main-catalog__link-title" href="#!">
-              <span class="main-catalog__title">Cat Energy<br>PRO 1000 г</span>
+              <span class="main-catalog__title">Cat Energy PRO 1000 г</span>
             </a>
             <table class="main-catalog__table">
               <tr class="main-catalog__row">
@@ -154,7 +154,7 @@
               <img class="main-catalog__image" src="#!" width="50" height="50" alt="">
             </a>
             <a class="main-catalog__link-title" href="#!">
-              <span class="main-catalog__title">Cat Energy<br>slim 500 г</span>
+              <span class="main-catalog__title">Cat Energy slim 500 г</span>
             </a>
             <table class="main-catalog__table">
               <tr class="main-catalog__row">
@@ -179,7 +179,7 @@
               <img class="main-catalog__image" src="#!" width="50" height="50" alt="">
             </a>
             <a class="main-catalog__link-title" href="#!">
-              <span class="main-catalog__title">Cat Energy<br>slim 1000 г</span>
+              <span class="main-catalog__title">Cat Energy slim 1000 г</span>
             </a>
             <table class="main-catalog__table">
               <tr class="main-catalog__row">
@@ -204,7 +204,7 @@
               <img class="main-catalog__image" src="#!" width="50" height="50" alt="">
             </a>
             <a class="main-catalog__link-title" href="#!">
-              <span class="main-catalog__title">Cat Energy<br>slim 500 г</span>
+              <span class="main-catalog__title">Cat Energy slim 500 г</span>
             </a>
             <table class="main-catalog__table">
               <tr class="main-catalog__row">
@@ -226,9 +226,12 @@
           </li>
           <li class="main-catalog__item">
             <section class="catalog-more">
-              <h2 class="catalog-more__title">Показать еще 100500 товаров</h2>
-              <p class="catalog-more__about">На самом деле вкусов гораздо больше!</p>
-              <a class="catalog-more__button button catalog-more__button--all" href="#!">Показать все</a>
+              <div class="catalog-more__wrapper">
+                <span class="catalog-more__cross"></span>
+                <h2 class="catalog-more__title">Показать еще 100500 товаров</h2>
+                <p class="catalog-more__about">На самом деле вкусов гораздо больше!</p>
+                <a class="catalog-more__button button" href="#!">Показать все</a>
+              </div>
             </section>
           </li>
         </ul>
@@ -237,15 +240,13 @@
     <section class="extra-goods">
       <div class="extra-goods__wrapper">
         <h2 class="extra-goods__title">Дополнительные товары</h2>
-        <ul class="extra-goods__list" aria-label="Дополнительные товары">
+        <ul class="extra-goods__list">
           <li class="extra-goods__item">
             <table class="extra-goods__table">
               <tr class="extra-goods__row">
-                <td colspan="2" class="extra-goods__caption">Сахарозаменитель</td>
-              </tr>
-              <tr>
+                <td class="extra-goods__caption">Сахарозаменитель</td>
                 <td class="extra-goods__data">1 упаковка (100 г)</td>
-                <td class="extra-goods__data">200 <abbr title="Рублей">₽</abbr></td>
+                <td class="extra-goods__data-count">200 <abbr title="Рублей">₽</abbr></td>
               </tr>
             </table>
             <div class="extra-goods__button">
@@ -255,11 +256,9 @@
           <li class="extra-goods__item">
             <table class="extra-goods__table">
               <tr class="extra-goods__row">
-                <td td colspan="2" class="extra-goods__caption">Питьевая вода</td>
-              </tr>
-              <tr>
+                <td class="extra-goods__caption">Питьевая вода</td>
                 <td class="extra-goods__data">5 литров</td>
-                <td class="extra-goods__data">50 <abbr title="Рублей">₽</abbr></td>
+                <td class="extra-goods__data-count">50 <abbr title="Рублей">₽</abbr></td>
               </tr>
             </table>
             <div class="extra-goods__button">
@@ -269,11 +268,9 @@
           <li class="extra-goods__item">
             <table class="extra-goods__table">
               <tr class="extra-goods__row">
-                <td td colspan="2" class="extra-goods__caption">Молоко</td>
-              </tr>
-              <tr>
+                <td class="extra-goods__caption">Молоко</td>
                 <td class="extra-goods__data">1 литр</td>
-                <td class="extra-goods__data">100 <abbr title="Рублей">₽</abbr></td>
+                <td class="extra-goods__data-count">100 <abbr title="Рублей">₽</abbr></td>
               </tr>
             </table>
             <div class="extra-goods__button">
@@ -283,11 +280,9 @@
           <li class="extra-goods__item">
             <table class="extra-goods__table">
               <tr class="extra-goods__row">
-                <td td colspan="2" class="extra-goods__caption">Витамины</td>
-              </tr>
-              <tr>
+                <td class="extra-goods__caption">Витамины</td>
                 <td class="extra-goods__data">1 упаковка (30 г)</td>
-                <td class="extra-goods__data">300 <abbr title="Рублей">₽</abbr></td>
+                <td class="extra-goods__data-count">300 <abbr title="Рублей">₽</abbr></td>
               </tr>
             </table>
             <div class="extra-goods__button">

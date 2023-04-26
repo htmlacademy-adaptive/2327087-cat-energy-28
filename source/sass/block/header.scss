@@ -37,7 +37,9 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
-    padding: 53px 110px 111px;
+    padding: 54px 110px 74px;
+    min-height: 60px;
+    justify-content: space-between;
   }
 }
 

@@ -33,33 +33,110 @@
 .extra-goods__list {
   @include list-reset;
   display: grid;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    min-height: 288px;
+  }
 }
 
 .extra-goods__item {
-  padding-bottom: 19px;
-  padding-top: 13px;
   border-top: 1px solid $color-border-list4;
+  padding: 12px 0 19px;
 
   &:last-child {
     border-bottom: 1px solid $color-border-list4;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 28px 38px;
+    border: 1px solid $color-border-list4;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 610px 244px;
+    column-gap: 40px;
+    padding: 15px 0 17px;
   }
 }
 
 .extra-goods__table {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.extra-goods__row {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 13px;
+  color: $color-desc;
+
+  @media (min-width: $tablet-width) {
+    display: table-row;
+    vertical-align: top;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: table-row;
+    vertical-align: middle;
+  }
 }
 
 .extra-goods__caption {
+  grid-column: 1 / -1;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $color-title2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.extra-goods__row {
+.extra-goods__data {
+  grid-column: 1 / 2;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.extra-goods__data-count {
   font-size: 14px;
   line-height: 14px;
-  color: $color-desc;
+  grid-column: 2 / 3;
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

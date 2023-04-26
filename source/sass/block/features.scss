@@ -194,31 +194,32 @@
   }
 
   &:hover {
-    .features__link--line {
-      background-image: url("/source/img/svg/arrow-big.svg");
+    .features__link-line {
+      background-image: url("../img/svg/arrow-big.svg");
     }
   }
 
   &:focus {
-    .features__link--line {
-      background-image: url("/source/img/svg/arrow-big.svg");
+    .features__link-line {
+      background-image: url("../img/svg/arrow-big.svg");
     }
   }
 
   &:active {
-    .features__link--line {
-      background-image: url("/source/img/svg/arrow-big.svg");
+    .features__link-line {
+      background-image: url("../img/svg/arrow-big.svg");
     }
+
     opacity: 0.4;
   }
 }
 
-.features__link--line {
+.features__link-line {
   display: inline-block;
   margin-left: 15px;
   width: 32px;
   height: 16px;
-  background-image: url("/source/img/svg/arrow-small.svg");
+  background-image: url("../img/svg/arrow-small.svg");
   background-repeat: no-repeat;
   transform: translateY(3px);
 }

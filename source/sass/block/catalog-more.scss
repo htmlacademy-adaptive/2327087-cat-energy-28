@@ -2,6 +2,18 @@
   grid-column: 1 / -1;
 }
 
+.catalog-more__wrapper {
+  position: relative;
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-items: center;
+    min-height: 390px;
+    align-items: center;
+  }
+}
+
 .catalog-more__title {
   @include title;
   font-family: $oswald400;
@@ -11,6 +23,12 @@
   margin-bottom: 8px;
   text-transform: uppercase;
   color: $color-title1;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .catalog-more__about {
@@ -19,9 +37,41 @@
   line-height: 16px;
   margin-bottom: 21px;
   color: $color-desc;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
-.catalog-more__button--all {
+.catalog-more__button {
+  justify-self: stretch;
   color: $color-desc;
   background-color: $color-bg-gray;
+}
+
+.catalog-more__cross {
+  display: block;
+  transform: translate(120px, -32px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-27px, 13px);
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $color-border-list4;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+    }
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }

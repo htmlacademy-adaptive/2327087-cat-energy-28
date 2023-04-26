@@ -87,7 +87,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/leaf.png");
+    background-image: url("../img/png/leaf.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -106,7 +106,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/water.png");
+    background-image: url("../img/png/water.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -125,7 +125,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/tableware.png");
+    background-image: url("../img/png/tableware.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -144,7 +144,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/clock.png");
+    background-image: url("../img/png/clock.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -171,7 +171,7 @@
       position: absolute;
       display: block;
       width: 136px;
-      font-family: "Oswald", "Lato", "Arial", sans-serif;
+      font-family: $oswald400;
       font-size: 280px;
       line-height: 280px;
       color: rgb(242, 242, 242);

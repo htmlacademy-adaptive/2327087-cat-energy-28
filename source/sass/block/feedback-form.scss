@@ -5,7 +5,8 @@
 
 .feedback-form__container {
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 630px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,8 +20,7 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding-top: 66px;
+    width: 630px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,11 +37,25 @@
   font-size: 36px;
   line-height: 36px;
 
+  &::before {
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background: $color-border-list2;
+    transform: translate(-20px, -37px);
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
 }
+
 
 .feedback-form__about {
   @include title;
@@ -54,6 +68,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 323px;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
