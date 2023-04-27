@@ -2,6 +2,9 @@
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
+  padding: 0 20px;
   text-transform: uppercase;
   color: $color-desc;
+  border: 1px solid $color-border-list6;
+  box-sizing: border-box;
 }

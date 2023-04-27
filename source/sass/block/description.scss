@@ -4,6 +4,19 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+
+    &::after {
+      position: absolute;
+      width: 768px;
+      height: 1px;
+      transform: translateX(-30px);
+      background: $color-border-list;
+      content: "";
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +34,12 @@
   text-align: left;
   margin-bottom: 40px;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .description__list {
@@ -34,8 +53,10 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 137px;
+    column-gap: 153px;
     row-gap: 37px;
+    margin-bottom: 47px;
+    counter-reset: verse 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,9 +72,13 @@
   grid-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    gap: 31px;
+    counter-increment: verse 1;
     height: 280px;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    gap: 0;
   }
 }
 
@@ -62,10 +87,17 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("");
+    background-image: url("../img/png/leaf.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -74,10 +106,17 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("");
+    background-image: url("../img/png/water.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -86,10 +125,17 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("");
+    background-image: url("../img/png/tableware.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -98,9 +144,41 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("");
+    background-image: url("../img/png/clock.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.description__about {
+  @include reset;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 230px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      width: 136px;
+      font-family: $oswald400;
+      font-size: 280px;
+      line-height: 280px;
+      color: rgb(242, 242, 242);
+      transform: translate(9px, -222px);
+      content: counter(verse);
+      right: 0;
+      z-index: -1;
+    }
   }
 }

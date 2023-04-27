@@ -8,14 +8,16 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
+    display: grid;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     width: 1220px;
-    grid-template-columns: min-content min-content min-content;
-    margin-bottom: 82px;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
+    margin-bottom: 267px;
   }
 }
 
@@ -29,13 +31,19 @@
   background: rgba(104, 183, 56, 0.85);
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    min-height: 260px;
+    position: relative;
+    display: block;
+    width: 420px;
+    min-height: 181px;
+    margin: 62px 80px 49px;
     background: $color-default-white;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
+    position: relative;
+    width: 420px;
+    z-index: 2;
+    margin: 0;
   }
 }
 
@@ -50,7 +58,12 @@
   color: $color-default-white;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+    padding: 0;
     color: $color-default-black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
   }
 }
 
@@ -65,6 +78,9 @@
 
   @media (min-width: $tablet-width) {
     color: $color-default-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
   }
 }
 
@@ -73,15 +89,20 @@
   height: 270px;
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 708px;
     height: 609px;
     background: $color-default-white;
+    transform: translateY(-54px);
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    background: $color-bg-green;
+    background: $color-bg-white;
+    transform: translate(530px, 127px);
+    z-index: 1;
+    position: absolute;
   }
 }
 
@@ -91,7 +112,14 @@
   line-height: 18px;
   margin-bottom: 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
+    margin-left: 80px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-row: 2 / -2;
   }
 }
