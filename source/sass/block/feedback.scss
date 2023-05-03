@@ -1,9 +1,7 @@
-.feedback-form {
+.feedback__container {
   background-color: $color-bg-white;
   color: $color-default-black;
-}
 
-.feedback-form__container {
   @media (min-width: $tablet-width) {
     width: 630px;
     margin: 0 auto;
@@ -14,13 +12,14 @@
   }
 }
 
-.feedback-form__wrapper {
+.feedback__wrapper {
   width: 280px;
   margin: 0 auto;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     width: 630px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +27,7 @@
   }
 }
 
-.feedback-form__title {
+.feedback__title {
   @include title;
   margin-bottom: 37px;
   font-family: $oswald400;
@@ -42,7 +41,7 @@
     width: 320px;
     height: 1px;
     background: $color-border-list2;
-    transform: translate(-20px, -37px);
+    transform: translate(-20px, -27px);
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -51,14 +50,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
     font-size: 60px;
     line-height: 60px;
   }
 }
 
-
-.feedback-form__about {
+.feedback__about {
   @include title;
+  width: 226px;
   margin-bottom: 39px;
   font-family: $oswald400;
   text-align: left;
@@ -72,5 +72,17 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.feedback-form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
   }
 }
