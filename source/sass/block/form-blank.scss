@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 280px;
   gap: 14px;
-  margin-bottom: 23px;
+  margin-bottom: 32px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
@@ -50,10 +50,14 @@
 }
 
 .form-blank__field-control {
+  font-size: 16px;
+  line-height: 18px;
   height: 45px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     height: 52px;
   }
 }
