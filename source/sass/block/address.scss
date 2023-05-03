@@ -21,9 +21,8 @@
   min-height: 60px;
   padding: 26px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  background-color: $color-bg-gray;
+  grid-template-columns: 139px 139px;
+  background: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
     width: 628px;
@@ -35,18 +34,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 425px;
-    min-height: 86px;
+    width: 407px;
+    min-height: 82px;
     margin: 0;
-    padding: 56px 60px 56px 80px;
+    padding: 60px 74px 60px 85px;
     position: absolute;
     z-index: 1;
     background-color: $color-bg-white;
-    transform: translate(68px, 73px);
+    transform: translate(105px, 94px);
   }
 }
 
 .address__title {
+  @include reset;
   font-family: $oswald400;
   font-weight: 400;
   font-style: normal;
@@ -62,6 +62,7 @@
 }
 
 .address__description {
+  @include reset;
   display: block;
   font-style: normal;
   font-size: 14px;
@@ -74,19 +75,35 @@
 
     &:first-child {
       margin-bottom: 10px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
 
 .address__map {
   width: 320px;
+  height: 362px;
   background-color: $color-bg-white;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+  }
+}
+
+.address__invitation {
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
