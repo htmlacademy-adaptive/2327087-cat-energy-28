@@ -3,9 +3,11 @@
   min-height: 289px;
   margin: 0 auto;
   background-color: rgba(104, 183, 56, 0.85);
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {

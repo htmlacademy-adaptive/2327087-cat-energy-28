@@ -1,18 +1,70 @@
-.form-choise {
-  @media (min-width: $desktop-width) {
-    grid-column: 3 / -1;
-  }
-}
-
 .form-choice__list {
   @include list-reset;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 13px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 13px;
   margin-bottom: 13px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $color-desc;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 517px;
+  }
+
+  &::after {
+    width: 320px;
+    height: 1px;
+    background: $color-border-list2;
+    transform: translate(-20px, 10px);
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.form-choice__field {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 15px;
+  align-items: center;
+}
+
+.form-choice__mark {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background: $color-default-white;
+  border: 1px solid $color-border-list4;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-choice__field-control:checked + .form-choice__mark::after {
+  position: absolute;
+  transform: translate(65%, 65%);
+  width: 13px;
+  height: 13px;
+  background-color: $color-bg-green;
+  border-radius: 50%;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }

@@ -1,19 +1,32 @@
-.form-comment {
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
-  }
-}
-
 .form-comment__legend {
   margin-bottom: 37px;
   font-family: $oswald400;
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form-comment__field-control {
   width: 280px;
+  padding: 10px 14px;
   height: 150px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    padding: 10px 19px;
+    height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
