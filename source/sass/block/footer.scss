@@ -15,6 +15,10 @@
   }
 }
 
+.footer__contacts {
+  width: 320px;
+}
+
 .footer__contacts-wrapper {
   width: 280px;
   margin: 0 auto;
@@ -22,13 +26,13 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     min-height: 37px;
-    padding: 55px 30px;
+    padding: 47px 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     min-height: 37px;
-    padding: 66px 110px;
+    padding: 58px 110px;
   }
 }
 
@@ -40,6 +44,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
