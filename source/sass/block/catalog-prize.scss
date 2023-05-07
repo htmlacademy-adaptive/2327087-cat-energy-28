@@ -12,11 +12,15 @@
     top: 0;
     width: 280px;
     height: 289px;
-    background-image: url("../img/jpg/background-price.jpg");
+    background-image: url("../img/jpg/background-prize.jpg");
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
     opacity: 0.1;
     content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/background-prize@2x.jpg");
+    }
 
     @media (min-width: $tablet-width) {
       width: 100%;

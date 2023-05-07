@@ -93,7 +93,7 @@
   position: absolute;
   width: 140px;
   height: 194px;
-  background-image: url("../img/svg/cat_slim.svg");
+  background-image: url("/source/img/svg/cat_slim.svg");
   background-size: 36px 50px;
   background-repeat: no-repeat;
   transform: translate(6px, 68px);
@@ -139,7 +139,7 @@
   position: absolute;
   width: 268px;
   height: 112px;
-  background-image: url("../img/svg/cat_pro.svg");
+  background-image: url("/source/img/svg/cat_pro.svg");
   background-size: 67px 28px;
   background-repeat: no-repeat;
   transform: translate(-10px, 40px);
@@ -241,21 +241,16 @@
     margin-top: 8px;
   }
 
-  &:hover {
-    .features__link-line {
-      background-image: url("../img/svg/arrow-big.svg");
-    }
-  }
-
+  &:hover,
   &:focus {
     .features__link-line {
-      background-image: url("../img/svg/arrow-big.svg");
+      background-image: url("/source/img/svg/arrow-big.svg");
     }
   }
 
   &:active {
     .features__link-line {
-      background-image: url("../img/svg/arrow-big.svg");
+      background-image: url("/source/img/svg/arrow-big.svg");
     }
 
     opacity: 0.4;
@@ -267,7 +262,7 @@
   margin-left: 22px;
   width: 32px;
   height: 16px;
-  background-image: url("../img/svg/arrow-small.svg");
+  background-image: url("/source/img/svg/arrow-small.svg");
   background-repeat: no-repeat;
   transform: translateY(3px);
 }
