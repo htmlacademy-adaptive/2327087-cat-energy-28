@@ -86,15 +86,19 @@
 .address__map {
   width: 320px;
   height: 362px;
-  background-color: $color-bg-white;
+  background-image: url("../img/jpg/background-map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
+    background-image: url("../img/jpg/background-map-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    background-image: url("../img/jpg/background-map-desktop.jpg");
   }
 }
 
