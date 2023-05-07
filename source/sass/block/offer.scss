@@ -34,14 +34,14 @@
     position: absolute;
     width: 320px;
     height: 302px;
-    background-image: url("../img/jpg/background-mobile.jpg");
+    background-image: url("/source/img/jpg/background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
     content: "";
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/jpg/background-mobile@2x.jpg");
+      background-image: url("/source/img/jpg/background-mobile@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
@@ -53,14 +53,14 @@
       display: inherit;
       width: 720px;
       height: 694px;
-      background-image: url("../img/jpg/background-desktop.jpg");
+      background-image: url("/source/img/jpg/background-desktop.jpg");
       opacity: 0.2;
       background-repeat: no-repeat;
       background-size: cover;
       transform: translate(530px, -456px);
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/jpg/background-desktop@2x.jpg");
+        background-image: url("/source/img/jpg/background-desktop@2x.jpg");
       }
     }
   }
