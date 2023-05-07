@@ -28,7 +28,7 @@
   align-items: center;
   width: 320px;
   min-height: 302px;
-  background: $color-hv-green;
+  background-color: rgba(104, 183, 56, 0.85);
 
   &::after {
     position: absolute;
@@ -36,9 +36,13 @@
     height: 302px;
     background-image: url("../img/jpg/background-mobile.jpg");
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
     opacity: 0.1;
     content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/background-mobile@2x.jpg");
+    }
 
     @media (min-width: $tablet-width) {
       margin-left: 0;
@@ -54,6 +58,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       transform: translate(530px, -456px);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/jpg/background-desktop@2x.jpg");
+      }
     }
   }
 

@@ -93,14 +93,13 @@
 
 //Меню навигации\\
 .header__navigation-list {
-  @media (min-width: $mobile-width) {
-    @include list-reset;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
-    text-align: center;
-  }
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  text-align: center;
+
 
   @media (min-width: $tablet-width) {
     @include list-reset;
