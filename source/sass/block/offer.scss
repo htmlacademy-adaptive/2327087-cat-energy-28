@@ -51,7 +51,7 @@
 
     @media (min-width: $desktop-width) {
       display: inherit;
-      width: 720px;
+      width: 50%;
       height: 694px;
       background-image: url("/source/img/jpg/background-desktop.jpg");
       opacity: 0.2;
@@ -79,7 +79,7 @@
     &::before {
       position: absolute;
       transform: translate(530px, -225px);
-      width: 720px;
+      width: 50%;
       height: 694px;
       background: $color-bg-green;
       content: "";

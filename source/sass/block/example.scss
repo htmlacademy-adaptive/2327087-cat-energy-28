@@ -12,8 +12,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    width: 1440px;
     height: 562px;
+    width: 100%;
     margin-bottom: 35px;
   }
 }
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 100%;
     background-color: $color-bg-gray;
   }
 }
