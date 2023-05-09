@@ -1,4 +1,5 @@
 .address__wrapper {
+  margin: 0 auto;
   width: 320px;
   background-color: $color-bg-white;
 
@@ -97,7 +98,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    //width: 1440px;
+    width: 100%;
     background-image: url("/source/img/jpg/background-map-desktop.jpg");
   }
 }
