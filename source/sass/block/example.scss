@@ -1,6 +1,6 @@
 .example {
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(white 135px, $color-bg-gray 120px);
+    background-image: linear-gradient($color-bg-white 135px, $color-bg-gray 120px);
   }
 }
 
