@@ -32,26 +32,58 @@
   color: $color-default-black;
 
   &::after {
-    position: absolute;
-    transform: translate(21px, 15px);
-    width: 53px;
-    height: 2px;
-    background-color: $color-bg-green;
     content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 14px;
+    width: 100vw;
+    height: 2px;
+    background: $color-bg-green;
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      transform: translate(-405px, 18px);
-      width: 768px;
+      //transform: translate(-405px, 18px);
+      //width: 768px;
+      left: -100vw;
+      right: -100vw;
       height: 2px;
-      background-color: #68b738;
+      background-color: $color-bg-green;
       content: "";
       z-index: -1;
+      top: 22px;
 
       @media (min-width: $desktop-width) {
-        width: 1440px;
-        margin-left: -40px;
-        transform: translate(-407px, 20px);
+        //width: 1440px;
+        //margin-left: -40px;
+        //transform: translate(-407px, 20px);
+        top: 22px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: -100vw;
+      top: 22px;
+      width: 100vw;
+      height: 2px;
+      background: $color-bg-green;
+
+      @media (min-width: $tablet-width) {
+        position: absolute;
+        left: -100vw;
+        right: -100vw;
+        height: 2px;
+        background-color: $color-bg-green;
+        content: "";
+        z-index: -1;
+        top: 22px;
+
+        @media (min-width: $desktop-width) {
+          top: 22px;
+        }
       }
     }
   }
