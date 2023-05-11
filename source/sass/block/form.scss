@@ -138,3 +138,58 @@
     width: 569px;
   }
 }
+
+.form__legend {
+  font-family: $oswald400;
+  //padding: 5px 22px 0 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-default-blackl;
+  margin-bottom: 27px;
+  background-color: $color-bg-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 22px;
+    left: -100vw;
+    right: -100vw;
+    height: 2px;
+    background: $color-bg-green;
+  }
+
+  &--width {
+    max-width: 205px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 62px -40px;
+    padding: 5px 40px 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &--margin {
+      margin-bottom: 51px;
+    }
+
+    &--width {
+      max-width: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 27px;
+      left: -100vw;
+      right: -100vw;
+      height: 2px;
+      background: $color-bg-green;
+    }
+
+    &::after {
+      top: 27px;
+    }
+  }
+}
