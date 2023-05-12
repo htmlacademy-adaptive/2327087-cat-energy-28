@@ -139,32 +139,30 @@
   }
 }
 
-.form__legend {
+.separated-title {
+  position: relative;
   font-family: $oswald400;
   //padding: 5px 22px 0 0;
   font-size: 36px;
   line-height: 36px;
   color: $color-default-black;
-  margin-bottom: 27px;
+  margin-bottom: 36px;
   background-color: $color-bg-white;
+  display: table;
 
   &::after {
     content: "";
     position: absolute;
     z-index: -1;
     top: 22px;
-    width: 100vw;
+    left: 0;
+    right: -100vw;
     height: 2px;
     background: $color-bg-green;
 
     @media (min-width: $tablet-width) {
       left: -100vw;
-      right: -100vw;
     }
-  }
-
-  &--width {
-    max-width: 205px;
   }
 
   @media (min-width: $tablet-width) {
@@ -172,28 +170,14 @@
     padding: 0 20px 0 40px;
     font-size: 36px;
     line-height: 36px;
-
-    &--margin {
-      margin-bottom: 51px;
-    }
-
-    &--width {
-      max-width: 100%;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 22px;
-      left: -100vw;
-      right: -100vw;
-      height: 2px;
-      background: $color-bg-green;
-    }
+    margin-bottom: 80px;
 
     &::after {
       top: 22px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
   }
 }

@@ -35,7 +35,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-
+  /*
   &::before {
     position: absolute;
     width: 320px;
@@ -47,7 +47,7 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
-  }
+  }*/
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;

@@ -35,6 +35,19 @@
   }
 }
 
+.header--line {
+  @media (max-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $color-border-list2;
+    }
+  }
+}
+
 .header__navigation-logo {
   display: flex;
   flex-direction: row;

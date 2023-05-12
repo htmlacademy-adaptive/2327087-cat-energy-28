@@ -22,85 +22,24 @@
 
 .extra-goods__title {
   @include title;
+  //width: 226px;
+  padding-right: 20px;
   position: relative;
   margin-bottom: 37px;
   font-family: $oswald400;
   text-align: left;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 36px;
   color: $color-default-black;
 
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 14px;
-    width: 100vw;
-    height: 2px;
-    background: $color-bg-green;
-
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      //transform: translate(-405px, 18px);
-      //width: 768px;
-      left: -100vw;
-      right: -100vw;
-      height: 2px;
-      background-color: $color-bg-green;
-      content: "";
-      z-index: -1;
-      top: 22px;
-
-      @media (min-width: $desktop-width) {
-        //width: 1440px;
-        //margin-left: -40px;
-        //transform: translate(-407px, 20px);
-        top: 22px;
-      }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: -100vw;
-      top: 22px;
-      width: 100vw;
-      height: 2px;
-      background: $color-bg-green;
-
-      @media (min-width: $tablet-width) {
-        position: absolute;
-        left: -100vw;
-        right: -100vw;
-        height: 2px;
-        background-color: $color-bg-green;
-        content: "";
-        z-index: -1;
-        top: 22px;
-
-        @media (min-width: $desktop-width) {
-          top: 22px;
-        }
-      }
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    display: block;
-    width: 340px;
-    padding: 0 37px;
-    margin-bottom: 75px;
-    font-size: 36px;
-    line-height: 36px;
-    background-color: $color-default-white;
+    padding: 0 36px 0 36px;
+    //width: 340px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
-    margin-left: -38px;
+    padding: 0 35px 0 40px;
   }
 }
 
