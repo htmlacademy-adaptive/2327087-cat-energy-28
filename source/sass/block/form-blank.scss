@@ -23,18 +23,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  &::after {
-    width: 320px;
-    height: 1px;
-    background: $color-border-list2;
-    transform: translate(-20px, 10px);
-    content: "";
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 }
 
 .form-blank__field {

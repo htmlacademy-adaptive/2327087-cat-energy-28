@@ -102,11 +102,12 @@
 
   &::before {
     position: absolute;
-    width: 320px;
+    width: 100%;
+    left: 0;
     height: 1px;
     margin-top: 12px;
     background: $color-border-list3;
-    transform: translate(-20px, -31px);
+    transform: translateY(-31px);
     content: "";
 
     @media (min-width: $tablet-width) {

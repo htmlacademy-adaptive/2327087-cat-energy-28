@@ -23,10 +23,26 @@
   }
 
   &::after {
-    width: 320px;
+    width: 100%;
+    position: absolute;
+    left: 0;
     height: 1px;
     background: $color-border-list2;
-    transform: translate(-20px, 10px);
+    transform: translateY(130px);
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background: $color-border-list2;
+    transform: translateY(-14px);
     content: "";
 
     @media (min-width: $tablet-width) {

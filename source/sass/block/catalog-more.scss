@@ -1,5 +1,20 @@
 .catalog-more {
   grid-column: 1 / -1;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    margin-top: 12px;
+    background: $color-border-list3;
+    transform: translateY(31px);
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .catalog-more__wrapper {

@@ -4,7 +4,7 @@
 }
 
 .extra-goods__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 3px auto 35px;
 
   @media (min-width: $tablet-width) {
@@ -23,16 +23,46 @@
 .extra-goods__title {
   @include title;
   //width: 226px;
-  padding-right: 20px;
+  display: table;
   position: relative;
-  margin-bottom: 37px;
+  padding: 25px 20px 37px 20px;
   font-family: $oswald400;
   text-align: left;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 24px;
   color: $color-default-black;
+  background-color: $color-bg-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 35px;
+    left: 0;
+    right: -100vw;
+    height: 2px;
+    background: $color-bg-green;
+
+    @media (min-width: $tablet-width) {
+      left: -100vw;
+    }
+  }
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 62px -40px;
+    padding: 0 20px 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+
+    &::after {
+      top: 22px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
     padding: 0 36px 0 36px;
     //width: 340px;
     margin-bottom: 80px;
@@ -45,6 +75,7 @@
 
 .extra-goods__list {
   @include list-reset;
+  margin: 0 20px 0 20px;
   display: grid;
 
   @media (min-width: $desktop-width) {
