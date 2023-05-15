@@ -1,8 +1,13 @@
+.footer {
+  //
+  background-color: $color-bg-gray;
+}
+
 .footer__container {
   max-width: 320px;
   min-height: 240px;
   margin: 0 auto;
-  background-color: $color-bg-gray;
+  //background-color: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -10,8 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     min-height: 169px;
+    //
+    max-width: 1440px;
   }
 }
 
@@ -22,13 +28,12 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     min-height: 37px;
-    padding: 55px 30px;
+    padding: 47px 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     min-height: 37px;
-    padding: 66px 110px;
   }
 }
 
@@ -40,6 +45,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

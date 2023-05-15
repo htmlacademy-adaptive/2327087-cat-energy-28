@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 280px;
   gap: 14px;
-  margin-bottom: 23px;
+  margin-bottom: 32px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
@@ -23,18 +23,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  &::after {
-    width: 320px;
-    height: 1px;
-    background: $color-border-list2;
-    transform: translate(-20px, 10px);
-    content: "";
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 }
 
 .form-blank__field {
@@ -50,10 +38,14 @@
 }
 
 .form-blank__field-control {
+  font-size: 16px;
+  line-height: 18px;
   height: 45px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     height: 52px;
   }
 }

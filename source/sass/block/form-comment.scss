@@ -1,11 +1,38 @@
 .form-comment__legend {
+  display: block;
+  width: 121px;
+  padding-right: 14px;
   margin-bottom: 37px;
   font-family: $oswald400;
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
+  background-color: $color-bg-white;
+
+  &::after {
+    position: absolute;
+    transform: translate(-121px, 15px);
+    width: 300px;
+    height: 2px;
+    background-color: $color-bg-green;
+    content: "";
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      transform: translate(-247px, 20px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      transform: translate(-287px, 20px);
+    }
+  }
 
   @media (min-width: $tablet-width) {
+    width: 182px;
+    padding: 0 40px;
+    margin-left: -42px;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
@@ -17,6 +44,9 @@
   padding: 10px 14px;
   height: 150px;
   margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 18px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     width: 630px;

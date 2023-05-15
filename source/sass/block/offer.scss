@@ -1,3 +1,11 @@
+.offer {
+  //
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
 .offer__wrapper {
   margin: 0 auto;
   display: flex;
@@ -10,14 +18,14 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     display: grid;
+    margin-bottom: 506px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    display: block;
     width: 1220px;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: min-content min-content;
-    margin-bottom: 267px;
+    margin-left: 190px;
+    margin-bottom: 265px;
   }
 }
 
@@ -28,22 +36,78 @@
   align-items: center;
   width: 320px;
   min-height: 302px;
-  background: rgba(104, 183, 56, 0.85);
+  background-color: rgba(104, 183, 56, 0.85);
+
+  &::after {
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background-image: url("/source/img/jpg/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/source/img/jpg/background-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inherit;
+      width: 50%;
+      height: 694px;
+      background-image: url("/source/img/jpg/background-desktop.jpg");
+      opacity: 0.2;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translate(530px, -456px);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/source/img/jpg/background-desktop@2x.jpg");
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: block;
     width: 420px;
     min-height: 181px;
-    margin: 62px 80px 49px;
+    margin: 51px 88px 22px;
     background: $color-default-white;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    width: 420px;
-    z-index: 2;
-    margin: 0;
+    margin: 85px 0 52px;
+
+    &::before {
+      position: absolute;
+      transform: translate(530px, -225px);
+      width: 50%;
+      height: 694px;
+      background: $color-bg-green;
+      content: "";
+    }
+  }
+}
+
+.offer__picture {
+  position: absolute;
+  transform: translateY(170px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(379px);
+    background: $color-bg-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background: none;
+    transform: translate(366px, -316px);
   }
 }
 
@@ -58,7 +122,7 @@
   color: $color-default-white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     padding: 0;
     color: $color-default-black;
     font-size: 60px;
@@ -82,31 +146,14 @@
     line-height: 20px;
     text-align: left;
   }
-}
-
-//Пока нет картинки резерв места //
-.offer__logo {
-  height: 270px;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 708px;
-    height: 609px;
-    background: $color-default-white;
-    transform: translateY(-54px);
-  }
 
   @media (min-width: $desktop-width) {
-    width: 552px;
-    height: 499px;
-    background: $color-bg-white;
-    transform: translate(530px, 127px);
-    z-index: 1;
-    position: absolute;
+    margin-bottom: 52px;
   }
 }
 
 .offer__button {
+  margin-top: 138px;
   width: 280px;
   font-size: 14px;
   line-height: 18px;
@@ -114,12 +161,20 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
-    margin-left: 80px;
+    width: 244px;
+    height: 54px;
+    margin-left: 90px;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 20px;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    grid-row: 2 / -2;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

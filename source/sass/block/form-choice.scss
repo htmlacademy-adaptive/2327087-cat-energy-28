@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 13px;
-  margin-bottom: 13px;
+  gap: 10px;
+  width: 280px;
+  margin-bottom: 32px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
@@ -12,6 +13,7 @@
   color: $color-desc;
 
   @media (min-width: $tablet-width) {
+    width: 540px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -21,10 +23,26 @@
   }
 
   &::after {
-    width: 320px;
+    width: 100%;
+    position: absolute;
+    left: 0;
     height: 1px;
     background: $color-border-list2;
-    transform: translate(-20px, 10px);
+    transform: translateY(130px);
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background: $color-border-list2;
+    transform: translateY(-14px);
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -33,10 +51,22 @@
   }
 }
 
+.form-choice__item {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 540px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 517px;
+  }
+}
+
 .form-choice__field {
   display: grid;
   grid-template-columns: 30px 1fr;
-  grid-gap: 15px;
+  grid-gap: 30px;
   align-items: center;
 }
 
@@ -56,7 +86,7 @@
 
 .form-choice__field-control:checked + .form-choice__mark::after {
   position: absolute;
-  transform: translate(65%, 65%);
+  transform: translate(61%, 61%);
   width: 13px;
   height: 13px;
   background-color: $color-bg-green;

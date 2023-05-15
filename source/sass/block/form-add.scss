@@ -1,13 +1,51 @@
 .form-add__title {
+  display: block;
+  width: 141px;
+  padding-right: 14px;
   margin-bottom: 34px;
   font-family: $oswald400;
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
+  background-color: $color-bg-white;
+
+  &::after {
+    position: absolute;
+    transform: translate(-142px, 16px);
+    width: 300px;
+    height: 2px;
+    background-color: $color-bg-green;
+    content: "";
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      transform: translate(-67px, -16px);
+      //Мозилла по-другому высчитывает положение элемента,
+      //поэтому нужно добавить префикс
+      -moz-transform: translate(-278px, 23px) !important; /*stylelint-disable-line */
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      transform: translate(-108px, -14px);
+      //Мозилла по-другому высчитывает положение элемента,
+      //поэтому нужно добавить префикс
+      -moz-transform: translate(-319px, 23px) !important; /*stylelint-disable-line */
+    }
+  }
 
   @media (min-width: $tablet-width) {
+    width: 211px;
+    padding: 0 40px;
+    margin-bottom: 60px;
+    margin-left: -42px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -16,7 +54,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 13px;
+  gap: 10px;
   margin-bottom: 34px;
   font-family: $oswald400;
   font-size: 16px;
@@ -29,6 +67,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 64px;
     row-gap: 32px;
+    margin-bottom: 54px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -36,6 +75,7 @@
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     grid-template-columns: repeat(4, 245px);
+    margin-bottom: 60px;
   }
 }
 
@@ -44,14 +84,28 @@
   grid-template-columns: 30px 1fr;
   grid-gap: 15px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-gap: 29px;
+  }
 }
 
 .form-add__mark {
   padding: 0;
   width: 30px;
   height: 30px;
+  box-sizing: border-box;
   background: $color-default-white;
   border: 1px solid $color-border-list4;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form-add__field-control:checked + .form-add__mark::before {
@@ -59,7 +113,13 @@
   transform: translate(30%, 30%);
   width: 18px;
   height: 18px;
-  background-image: url("../img/svg/mark.svg");
+  background-image: url("/source/img/svg/mark.svg");
   background-repeat: no-repeat;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 18px;
+    transform: translate(30%, 44%);
+  }
 }

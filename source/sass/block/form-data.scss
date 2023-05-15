@@ -1,16 +1,46 @@
 .form-data__title {
-  padding-top: 26px;
+  display: block;
+  width: 187px;
+  padding-right: 14px;
   padding-bottom: 35px;
   font-family: $oswald400;
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
+  background-color: $color-bg-white;
+
+  &::after {
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    transform: translate(-157px, -8px);
+    background-color: $color-bg-green;
+    content: "";
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      transform: translate(-583px, 23px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      transform: translate(-623px, 20px);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     @include reset;
+    width: 515px;
+    padding: 0 42px;
+    margin-left: -42px;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -57,9 +87,52 @@
 
 .form-data__field-label {
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+  }
 }
 
 .form-data__field-control {
+  font-size: 16px;
+  line-height: 18px;
   height: 45px;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    gap: 20px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-data__field-control-letter {
+  position: absolute;
+  right: 0;
+  left: 530px;
+  padding-left: 10px;
+  padding-right: 20px;
+  stroke: $color-default-black;
+
+  @media (min-width: $desktop-width) {
+    left: 530px;
+  }
+
+  &:focus {
+    stroke: $color-bg-green;
+  }
+}
+
+.form-data__field-control-phone {
+  position: absolute;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+  stroke: $color-default-black;
+
+  &:focus {
+    stroke: $color-bg-green;
+  }
 }

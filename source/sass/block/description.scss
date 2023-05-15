@@ -36,7 +36,7 @@
   color: $color-default-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -52,10 +52,10 @@
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
-    row-gap: 37px;
-    margin-bottom: 47px;
+    grid-template-columns: 245px 250px;
+    column-gap: 139px;
+    row-gap: 36px;
+    margin-bottom: 56px;
     counter-reset: verse 0;
   }
 
@@ -63,6 +63,7 @@
     display: grid;
     grid-template-columns: repeat(4, 230px);
     grid-gap: 94px;
+    margin-bottom: 80px;
   }
 }
 
@@ -87,7 +88,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("../img/png/leaf.png");
+    background-image: url("/source/img/png/leaf.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -106,7 +107,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("../img/png/water.png");
+    background-image: url("/source/img/png/water.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -125,7 +126,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("../img/png/tableware.png");
+    background-image: url("/source/img/png/tableware.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -144,7 +145,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("../img/png/clock.png");
+    background-image: url("/source/img/png/clock.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -163,9 +164,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 230px;
+    width: 244px;
     font-size: 16px;
     line-height: 24px;
+    white-space: pre-line;
 
     &::after {
       position: absolute;
