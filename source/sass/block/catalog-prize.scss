@@ -17,14 +17,14 @@
     top: 0;
     width: 280px;
     height: 289px;
-    background-image: url("/source/img/jpg/background-price.jpg");
+    background-image: url("../img/jpg/background-prize.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
     content: "";
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/source/img/jpg/background-prize@2x.jpg");
+      background-image: url("../img/jpg/background-prize@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
@@ -63,7 +63,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: $color-default-white;
+  color: $color-white;
   white-space: pre-line;
 
   &::before {
@@ -73,8 +73,8 @@
     top: 20%;
     width: 80px;
     height: 84px;
-    color: $color-default-white;
-    background-image: url("/source/img/png/gift.png");
+    color: $color-white;
+    background-image: url("../img/png/gift.png");
     background-repeat: no-repeat;
     content: "";
 

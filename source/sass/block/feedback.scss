@@ -1,5 +1,5 @@
 .feedback__container {
-  background-color: $color-bg-white;
+  background-color: $color-white;
   color: $color-default-black;
 
   @media (min-width: $tablet-width) {
@@ -35,19 +35,6 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  /*
-  &::before {
-    position: absolute;
-    width: 320px;
-    height: 1px;
-    background: $color-border-list2;
-    transform: translate(-20px, -27px);
-    content: "";
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }*/
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;

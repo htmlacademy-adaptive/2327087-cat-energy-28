@@ -1,22 +1,16 @@
 .footer {
-  //
   background-color: $color-bg-gray;
 }
 
 .footer__container {
   max-width: 320px;
-  min-height: 240px;
   margin: 0 auto;
-  //background-color: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    min-height: 147px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 169px;
-    //
     max-width: 1440px;
   }
 }
@@ -27,13 +21,11 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    min-height: 37px;
     padding: 47px 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    min-height: 37px;
   }
 }
 
