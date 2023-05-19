@@ -7,9 +7,9 @@
 
     &::after {
       position: absolute;
-      width: 768px;
+      left: 0;
+      width: 100%;
       height: 1px;
-      transform: translateX(-30px);
       background: $color-border-list;
       content: "";
 
@@ -88,7 +88,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/leaf.png");
+    background-image: url("../img/png/leaf.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -107,7 +107,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/water.png");
+    background-image: url("../img/png/water.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -126,7 +126,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/tableware.png");
+    background-image: url("../img/png/tableware.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;
@@ -145,7 +145,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/png/clock.png");
+    background-image: url("../img/png/clock.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-bg-green;

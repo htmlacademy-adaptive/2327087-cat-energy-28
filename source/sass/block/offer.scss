@@ -1,5 +1,4 @@
 .offer {
-  //
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     margin: auto;
@@ -42,14 +41,14 @@
     position: absolute;
     width: 320px;
     height: 302px;
-    background-image: url("/source/img/jpg/background-mobile.jpg");
+    background-image: url("../img/jpg/background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
     content: "";
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/source/img/jpg/background-mobile@2x.jpg");
+      background-image: url("../img/jpg/background-mobile@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
@@ -61,14 +60,14 @@
       display: inherit;
       width: 50%;
       height: 694px;
-      background-image: url("/source/img/jpg/background-desktop.jpg");
+      background-image: url("../img/jpg/background-desktop.jpg");
       opacity: 0.2;
       background-repeat: no-repeat;
       background-size: cover;
       transform: translate(530px, -456px);
 
       @media (min-resolution: 2dppx) {
-        background-image: url("/source/img/jpg/background-desktop@2x.jpg");
+        background-image: url("../img/jpg/background-desktop@2x.jpg");
       }
     }
   }
@@ -78,7 +77,7 @@
     width: 420px;
     min-height: 181px;
     margin: 51px 88px 22px;
-    background: $color-default-white;
+    background: $color-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +100,7 @@
 
   @media (min-width: $tablet-width) {
     transform: translateY(379px);
-    background: $color-bg-white;
+    background: $color-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,7 +118,7 @@
   line-height: 36px;
   padding-top: 27px;
   margin-bottom: 25px;
-  color: $color-default-white;
+  color: $color-white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
@@ -138,7 +137,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 29px;
-  color: $color-default-white;
+  color: $color-white;
 
   @media (min-width: $tablet-width) {
     color: $color-default-black;

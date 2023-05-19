@@ -7,7 +7,7 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-default-black;
-  background-color: $color-bg-white;
+  background-color: $color-white;
 
   &::after {
     position: absolute;
@@ -99,7 +99,7 @@
   width: 30px;
   height: 30px;
   box-sizing: border-box;
-  background: $color-default-white;
+  background: $color-white;
   border: 1px solid $color-border-list4;
 
   @media (min-width: $tablet-width) {
@@ -113,7 +113,7 @@
   transform: translate(30%, 30%);
   width: 18px;
   height: 18px;
-  background-image: url("/source/img/svg/mark.svg");
+  background-image: url("../img/svg/mark.svg");
   background-repeat: no-repeat;
   content: "";
 

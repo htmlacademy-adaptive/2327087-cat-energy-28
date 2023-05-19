@@ -1,7 +1,7 @@
 .main-catalog__wrapper {
   width: 280px;
   margin: 0 auto;
-  background-color: $color-bg-white;
+  background-color: $color-white;
   color: $color-default-black;
 
   @media (min-width: $tablet-width) {
@@ -24,19 +24,6 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  /*
-  &::before {
-    position: absolute;
-    width: 320px;
-    height: 1px;
-    background: $color-border-list2;
-    transform: translate(-20px, -29px);
-    content: "";
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }*/
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -89,7 +76,7 @@
     &:last-child {
       display: block;
       border: 2px solid $color-bg-gray;
-      background-color: $color-bg-white;
+      background-color: $color-white;
     }
 
     @media (min-width: $desktop-width) {

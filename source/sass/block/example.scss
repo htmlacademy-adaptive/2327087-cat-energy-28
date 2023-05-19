@@ -1,31 +1,29 @@
 .example {
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($color-white 59%, $color-bg-grey 59%);
+  }
+
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient($color-bg-white 135px, $color-bg-gray 120px);
+    background-image: linear-gradient($color-white 135px, $color-bg-gray 120px);
   }
 }
 
 .example-wrapper {
-  @media (min-width: $mobile-width) {
-    max-width: 320px;
-    margin: auto;
-    height: 660px;
-    background-color: $color-bg-gray;
-  }
+  margin: auto;
+  background-color: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    height: 1080px;
     margin: 0 auto;
-    background-color: $color-default-white;
+    background-color: $color-white;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    height: 562px;
     width: 100%;
-    //
     margin: auto;
     max-width: 1440px;
+    background-color: $color-bg-gray;
   }
 }
 
@@ -34,13 +32,15 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin-bottom: 220px;
+    width: 100%;
+    padding-bottom: 200px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     background-color: $color-bg-gray;
+    padding-bottom: 0;
   }
 }
 
@@ -58,7 +58,6 @@
     width: 433px;
     padding: 45px 110px 75px;
     display: block;
-    height: 317px;
   }
 }
 
@@ -70,18 +69,24 @@
   line-height: 40px;
   text-align: left;
   color: $color-default-black;
-  padding: 25px 25px 0;
-  margin-bottom: 25px;
+  padding: 20px 20px 40px 0;
+  margin: 0 auto;
+  max-width: 280px;
+  background-color: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding: 43px 0 63px;
+    max-width: 708px;
+    margin: 0 auto;
+    background-color: $color-white;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 75px;
-    background-color: $color-bg-white;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -94,12 +99,14 @@
 
   @media (min-width: $tablet-width) {
     @include reset;
+    padding: 0 30px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
+    padding: 0;
   }
 }
 
@@ -116,6 +123,7 @@
     column-gap: 42px;
     align-items: center;
     justify-items: end;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -170,7 +178,7 @@
     width: 120px;
     font-size: 14px;
     line-height: 14px;
-    background-color: $color-bg-white;
+    background-color: $color-white;
 
     &--xl {
       width: 145px;
@@ -228,11 +236,14 @@
 
 .example__slider {
   width: 280px;
-  background-color: $color-bg-grey;
+  padding-bottom: 270px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 462px;
+    background-color: $color-bg-grey;
+    position: relative;
+    width: 100%;
+    top: 200px;
+    padding-bottom: 430px;
   }
 
   @media (min-width: $desktop-width) {
@@ -240,23 +251,18 @@
     top: 0;
     right: 0;
     width: 560px;
-    height: 512px;
     transform: translate(-195px, 190px);
     background: none;
   }
 }
 
-.example__slider-item {
+.example__slider-body {
   @include reset;
-  position: absolute;
   width: 280px;
-  height: 256px;
-  transform: translate(21px, -24px);
+  transform: translate(0, -24px);
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     width: 560px;
-    height: 512px;
     transform: translate(104px, -149px);
   }
 
@@ -303,7 +309,7 @@
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background-image: url("/source/img/svg/thumb.svg");
+  background-image: url("../img/svg/thumb.svg");
   background-repeat: no-repeat;
   border: none;
   transform: translate(-18px, 105px);

@@ -7,7 +7,7 @@
   font-size: 20px;
   line-height: 20px;
   color: $color-default-black;
-  background-color: $color-bg-white;
+  background-color: $color-white;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -94,7 +94,7 @@
   @media (min-width: $desktop-width) {
     width: 440px;
     margin-right: 40px;
-    color: $color-bg-white;
+    color: $color-white;
     z-index: 1;
   }
 
@@ -137,7 +137,7 @@
   height: 20px;
   border: 0;
   transform: translate(275px, -40px);
-  background: url("/source/img/svg/nav_cross.svg");
+  background: url("../img/svg/nav-cross.svg");
   background-repeat: no-repeat;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
@@ -154,7 +154,7 @@
   height: 20px;
   border: 0;
   transform: translate(275px, -40px);
-  background: url("/source/img/svg/nav_hamburger.svg");
+  background: url("../img/svg/nav-hamburger.svg");
   background-repeat: no-repeat;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
@@ -168,7 +168,7 @@
   @media (min-width: $mobile-width) {
     position: absolute;
     display: flex;
-    background-color: $color-bg-white;
+    background-color: $color-white;
     width: 320px;
     animation: nav_animation 0.6s;
     z-index: 1;
@@ -273,7 +273,7 @@
       content: "";
 
       @media (min-width: $desktop-width) {
-        background-color: $color-bg-white;
+        background-color: $color-white;
       }
     }
   }
