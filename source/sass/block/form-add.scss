@@ -54,8 +54,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 34px;
+  gap: 15px;
+  margin-bottom: 30px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
@@ -67,7 +67,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 64px;
     row-gap: 32px;
-    margin-bottom: 54px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -75,7 +74,7 @@
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     grid-template-columns: repeat(4, 245px);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -121,5 +120,19 @@
     width: 24px;
     height: 18px;
     transform: translate(30%, 44%);
+  }
+}
+
+.form-add__field-control {
+  &:hover + .form-add__mark {
+    border: 1px solid $color-border-list7;
+  }
+
+  &:focus + .form-add__mark {
+    outline: 1px solid;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
   }
 }

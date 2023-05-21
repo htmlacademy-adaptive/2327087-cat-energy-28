@@ -13,4 +13,12 @@
   &:focus {
     border-color: $color-desc;
   }
+
+  &:invalid {
+    border-color: $color-border-invalid;
+  }
+
+  &:valid {
+    border-color: $color-border-list6;
+  }
 }
