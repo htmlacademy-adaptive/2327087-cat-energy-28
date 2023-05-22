@@ -73,11 +73,10 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () => {
+const svg = () =>
   gulp.src(['source/img/**/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
-}
 
 
 // Copy
