@@ -37,11 +37,12 @@
   @media (min-width: $desktop-width) {
     width: 407px;
     min-height: 82px;
-    margin: 0;
-    padding: 60px 74px 60px 85px;
+    padding: 60px 60px 56px 80px;
     position: absolute;
     z-index: 1;
-    transform: translate(105px, 94px);
+    margin-top: 95px;
+    margin-bottom: 107px;
+    margin-left: 110px;
   }
 }
 
@@ -58,6 +59,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    padding-left: 15px;
   }
 }
 

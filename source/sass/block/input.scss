@@ -13,4 +13,13 @@
   &:focus {
     border-color: $color-desc;
   }
+
+  &--validable:invalid {
+    border-color: $color-border-invalid;
+
+    & + .form-data__field-control-phone,
+    & + .form-data__field-control-letter {
+      stroke: $color-border-invalid;
+    }
+  }
 }

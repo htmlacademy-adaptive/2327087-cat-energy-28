@@ -5,17 +5,20 @@
   flex-wrap: wrap;
   gap: 10px;
   width: 280px;
-  margin-bottom: 32px;
+  margin-bottom: 45px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $color-desc;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     width: 540px;
     font-size: 20px;
     line-height: 30px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +45,7 @@
     left: 0;
     height: 1px;
     background: $color-border-list2;
-    transform: translateY(-14px);
+    transform: translateY(-24px);
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -66,8 +69,12 @@
 .form-choice__field {
   display: grid;
   grid-template-columns: 30px 1fr;
-  grid-gap: 30px;
+  grid-gap: 15px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 30px;
+  }
 }
 
 .form-choice__mark {
@@ -96,5 +103,19 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
+  }
+}
+
+.form-choice__field-control {
+  &:hover + .form-choice__mark {
+    border: 1px solid $color-border-list7;
+  }
+
+  &:focus + .form-choice__mark {
+    outline: 1px solid;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
   }
 }
