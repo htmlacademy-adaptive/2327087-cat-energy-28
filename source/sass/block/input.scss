@@ -14,11 +14,12 @@
     border-color: $color-desc;
   }
 
-  &:invalid {
+  &--validable:invalid {
     border-color: $color-border-invalid;
-  }
 
-  &:valid {
-    border-color: $color-border-list6;
+    & + .form-data__field-control-phone,
+    & + .form-data__field-control-letter {
+      stroke: $color-border-invalid;
+    }
   }
 }

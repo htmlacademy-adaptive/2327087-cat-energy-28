@@ -106,11 +106,6 @@
     stroke: $color-bg-green;
   }
 
-  &:invalid + .form-data__field-control-letter,
-  &:invalid + .form-data__field-control-phone {
-    stroke: $color-border-invalid;
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
     gap: 20px;

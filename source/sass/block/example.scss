@@ -1,6 +1,6 @@
 .example {
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($color-white 59%, $color-bg-grey 59%);
+    background-image: linear-gradient($color-white 57.5%, $color-bg-grey 50%);
   }
 
   @media (min-width: $desktop-width) {

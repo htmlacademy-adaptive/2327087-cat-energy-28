@@ -22,7 +22,7 @@
   }
 }
 
-.social-list__item--grid {
+.social-list__item__soc--grid {
   padding: 11px;
   display: grid;
   grid-template-columns: min-content min-content min-content;
@@ -49,7 +49,7 @@
   }
 }
 
-.social-list__link--flex {
+.social-link__copyright {
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -21,6 +21,7 @@ import svgo from 'gulp-svgo';
 const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
@@ -72,18 +73,9 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () =>
+const svg = () => {
   gulp.src(['source/img/**/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
-
-const sprite = () => {
-  return gulp.src('source/img/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore( {
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
 
@@ -132,7 +124,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/script.js', gulp.series(scripts.reload));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -147,7 +139,6 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     createWebp
   ),
 );
@@ -163,7 +154,6 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     createWebp
   ),
   gulp.series(
