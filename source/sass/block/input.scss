@@ -14,11 +14,24 @@
     border-color: $color-desc;
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &--validable:invalid {
     border-color: $color-border-invalid;
 
     & + svg {
       stroke: $color-border-invalid;
     }
+  }
+}
+
+.input[type="number"] {
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
   }
 }
