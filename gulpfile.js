@@ -8,10 +8,6 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import cheerio from 'gulp-cheerio';
-import webp from 'gulp-webp';
-import svgstore from 'gulp-svgstore';
-import imagemin from 'gulp-imagemin';
 import del from 'del';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
@@ -45,6 +41,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest('build/js'))
 }
 
@@ -123,7 +120,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts.reload));
+  gulp.watch('source/js/script.js', gulp.series(scripts, reload));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 

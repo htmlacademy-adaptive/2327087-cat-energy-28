@@ -156,11 +156,10 @@
   transform: translate(275px, -40px);
   background: url("../img/svg/nav-hamburger.svg");
   background-repeat: no-repeat;
-  filter: drop-shadow(0 4px 4px $color-default-black);
   cursor: pointer;
 
   &:hover {
-    color: $color-default-black;
+    filter: drop-shadow(0 2px 2px $color-default-black);
   }
 
   &:focus {
