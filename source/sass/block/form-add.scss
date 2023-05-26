@@ -1,80 +1,33 @@
-.form-add__title {
-  display: block;
-  width: 141px;
-  padding-right: 14px;
-  margin-bottom: 34px;
-  font-family: $oswald400;
-  font-size: 24px;
-  line-height: 26px;
-  color: $color-default-black;
-  background-color: $color-white;
-
-  &::after {
-    position: absolute;
-    transform: translate(-142px, 16px);
-    width: 300px;
-    height: 2px;
-    background-color: $color-bg-green;
-    content: "";
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      width: 768px;
-      transform: translate(-67px, -16px);
-      //Мозилла по-другому высчитывает положение элемента,
-      //поэтому нужно добавить префикс
-      -moz-transform: translate(-278px, 23px) !important; /*stylelint-disable-line */
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1440px;
-      transform: translate(-108px, -14px);
-      //Мозилла по-другому высчитывает положение элемента,
-      //поэтому нужно добавить префикс
-      -moz-transform: translate(-319px, 23px) !important; /*stylelint-disable-line */
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 211px;
-    padding: 0 40px;
-    margin-bottom: 60px;
-    margin-left: -42px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
-  }
-}
-
 .form-add__list {
   @include list-reset;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: 13px;
+  margin-bottom: 33px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $color-desc;
+  color: $color-default-black;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 64px;
     row-gap: 32px;
+    column-gap: 0;
     font-size: 20px;
     line-height: 30px;
+    padding-top: 30px;
+    margin-left: 70px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     grid-template-columns: repeat(4, 245px);
-    margin-bottom: 40px;
+    margin-left: 110px;
   }
 }
 

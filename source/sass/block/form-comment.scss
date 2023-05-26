@@ -41,7 +41,7 @@
 
 .form-comment__field-control {
   width: 280px;
-  padding: 10px 14px;
+  padding: 16px 14px;
   height: 150px;
   margin-bottom: 22px;
   font-size: 16px;
@@ -54,9 +54,14 @@
     height: 175px;
     font-size: 20px;
     line-height: 30px;
+    margin-top: 45px;
+    margin-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-bottom: 35px;
+    margin-left: 110px;
+    margin-top: 50px;
   }
 }

@@ -1,16 +1,16 @@
 .extra-goods__wrapper {
   width: 320px;
-  margin: 3px auto 35px;
+  margin: 3px auto 32px;
 
   @media (min-width: $tablet-width) {
     position: relative;
     width: 708px;
-    margin: 0 auto 69px;
+    margin: 0 auto 75px;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 100%;
     margin-bottom: 90px;
   }
 }
@@ -36,6 +36,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +54,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 36px 28px;
+    padding: 25px 36px 28px;
     border: 1px solid $color-border-list4;
     border-bottom: none;
   }
@@ -65,11 +66,12 @@
     padding: 15px 0 15px;
     border: none;
     border-top: 1px solid $color-border-list4;
+    margin-left: 110px;
   }
 }
 
 .extra-goods__table {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -130,10 +132,6 @@
     line-height: 20px;
   }
 
-  @media (min-width: $tablet-width) {
-    text-align: right;
-  }
-
   @media (min-width: $desktop-width) {
     text-align: left;
   }
@@ -155,4 +153,6 @@
 
 .extra-goods__button {
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 }
