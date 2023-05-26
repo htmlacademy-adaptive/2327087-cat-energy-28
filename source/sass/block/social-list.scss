@@ -10,7 +10,7 @@
   }
 
   &:last-child {
-    padding: 10px 0 30px;
+    padding: 10px 10px 30px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -22,7 +22,7 @@
   }
 }
 
-.social-list__item__soc--grid {
+.social-list__item--grid {
   padding: 11px;
   display: grid;
   grid-template-columns: min-content min-content min-content;
@@ -39,6 +39,7 @@
   font-size: 16px;
   line-height: 19px;
   text-transform: capitalize;
+  padding-left: 10px;
 
   &:hover {
     color: $color-desc;
@@ -49,7 +50,7 @@
   }
 }
 
-.social-link__copyright {
+.social-list__copyright {
   display: flex;
   align-items: center;
   justify-content: space-between;

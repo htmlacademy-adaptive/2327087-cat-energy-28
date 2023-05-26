@@ -6,9 +6,8 @@
     width: 100%;
     left: 0;
     height: 1px;
-    margin-top: 12px;
     background: $color-border-list3;
-    transform: translateY(31px);
+    transform: translateY(26px);
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -42,6 +41,10 @@
     width: 170px;
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
 }
@@ -58,7 +61,7 @@
     line-height: 18px;
     width: 165px;
     min-height: 36px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 }
 
@@ -93,7 +96,7 @@
 
 .catalog-more__cross {
   @media (min-width: $tablet-width) {
-    transform: translate(-33px, 16px);
+    transform: translate(-33px, 23px);
     margin-bottom: 100px;
   }
 
