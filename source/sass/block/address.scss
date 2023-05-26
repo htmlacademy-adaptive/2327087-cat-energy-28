@@ -1,13 +1,14 @@
 .address__wrapper {
+  margin: 0 auto;
   width: 320px;
-  background-color: $color-bg-white;
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 100%;
     height: 400px;
   }
 }
@@ -21,9 +22,8 @@
   min-height: 60px;
   padding: 26px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  background-color: $color-bg-gray;
+  grid-template-columns: 139px 139px;
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     width: 628px;
@@ -35,18 +35,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 425px;
-    min-height: 86px;
-    margin: 0;
-    padding: 56px 60px 56px 80px;
+    width: 407px;
+    min-height: 82px;
+    padding: 57px 80px 55px 80px;
     position: absolute;
     z-index: 1;
-    background-color: $color-bg-white;
-    transform: translate(68px, 73px);
+    margin-top: 95px;
+    margin-bottom: 107px;
+    margin-left: calc(50% - 610px);
   }
 }
 
 .address__title {
+  @include reset;
   font-family: $oswald400;
   font-weight: 400;
   font-style: normal;
@@ -58,10 +59,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    padding: 0;
   }
 }
 
 .address__description {
+  @include reset;
   display: block;
   font-style: normal;
   font-size: 14px;
@@ -74,19 +77,37 @@
 
     &:first-child {
       margin-bottom: 10px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
 
 .address__map {
-  width: 320px;
-  background-color: $color-bg-white;
+  height: 362px;
+  background-image: url("../img/jpg/background-map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 calc(160px - 50vw);
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    height: 400px;
+    background-image: url("../img/jpg/background-map-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    background-image: url("../img/jpg/background-map-desktop.jpg");
+  }
+}
+
+.address__invitation {
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }

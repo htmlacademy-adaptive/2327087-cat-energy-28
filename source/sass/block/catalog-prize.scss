@@ -1,27 +1,104 @@
+.catalog-prize {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .catalog-prize__wrapper {
+  position: relative;
+  display: block;
   width: 280px;
-  min-height: 289px;
+  height: 289px;
   margin: 0 auto;
   background-color: rgba(104, 183, 56, 0.85);
   margin-bottom: 35px;
 
+  &::after {
+    position: absolute;
+    top: 0;
+    width: 280px;
+    height: 289px;
+    background-image: url("../img/jpg/background-prize.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/background-prize@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position-y: -325px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-y: 0;
+      background-position-x: -31px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin-bottom: 76px;
+    position: relative;
+    width: 707px;
+    height: 200px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 245px;
     height: 288px;
-    transform: translate(1100px, -373px);
+    transform: translate(1085px, -377px);
   }
 }
 
 .catalog-prize__title {
   @include title;
+  display: block;
+  margin: 0 auto;
+  padding: 189px 61px 43px 58px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: $color-default-white;
+  color: $color-white;
+  white-space: pre-line;
+  width: 161px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    right: 35%;
+    top: 20%;
+    width: 80px;
+    height: 84px;
+    color: $color-white;
+    background-image: url("../img/png/gift.png");
+    background-repeat: no-repeat;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      right: 0;
+      transform: translate(-422px, -14px);
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: translate(-40px, -130px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    position: absolute;
+    text-align: left;
+    transform: translate(422px, 71px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(40px, 185px);
+    text-align: center;
+  }
 }

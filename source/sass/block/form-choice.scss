@@ -3,17 +3,22 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 13px;
-  margin-bottom: 13px;
+  gap: 10px;
+  width: 280px;
+  margin-bottom: 45px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $color-desc;
+  color: $color-title2;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
+    width: 540px;
     font-size: 20px;
     line-height: 30px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,10 +26,26 @@
   }
 
   &::after {
-    width: 320px;
+    width: 100%;
+    position: absolute;
+    left: 0;
     height: 1px;
     background: $color-border-list2;
-    transform: translate(-20px, 10px);
+    transform: translateY(130px);
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background: $color-border-list2;
+    transform: translateY(-24px);
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -33,18 +54,34 @@
   }
 }
 
+.form-choice__item {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 540px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 517px;
+  }
+}
+
 .form-choice__field {
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-gap: 15px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 30px;
+  }
 }
 
 .form-choice__mark {
   padding: 0;
   width: 30px;
   height: 30px;
-  background: $color-default-white;
+  background: $color-white;
   border: 1px solid $color-border-list4;
   border-radius: 50%;
 
@@ -56,7 +93,7 @@
 
 .form-choice__field-control:checked + .form-choice__mark::after {
   position: absolute;
-  transform: translate(65%, 65%);
+  transform: translate(61%, 61%);
   width: 13px;
   height: 13px;
   background-color: $color-bg-green;
@@ -66,5 +103,19 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
+  }
+}
+
+.form-choice__field-control {
+  &:hover + .form-choice__mark {
+    border: 1px solid $color-border-list7;
+  }
+
+  &:focus + .form-choice__mark {
+    outline: 1px solid;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
   }
 }

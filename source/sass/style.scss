@@ -13,11 +13,12 @@
 @import "./block/main-wrapper.scss";
 @import "./block/description.scss";
 @import "./block/example.scss";
+@import "./block/example-wrapper.scss";
 @import "./block/address.scss";
 @import "./block/map-invitation.scss";
 @import "./block/footer.scss";
 @import "./block/social-list.scss";
-@import "./block/feedback-form.scss";
+@import "./block/feedback.scss";
 @import "./block/form.scss";
 @import "./block/form-blank.scss";
 @import "./block/form-choice.scss";
@@ -30,3 +31,4 @@
 @import "./block/catalog-more.scss";
 @import "./block/extra-goods.scss";
 @import "./block/catalog-prize.scss";
+@import "./block/separated-title.scss"

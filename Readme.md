@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Данил Мальков](https://up.htmlacademy.ru/adaptive/28/user/2327087).
-* Наставник: [Дмитрий Дроганов](https://htmlacademy.ru/profile/dmdragon).
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand) .
 
 ---
 

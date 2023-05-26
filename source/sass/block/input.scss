@@ -1,10 +1,37 @@
 .input {
   font-family: $oswald400;
-  font-size: 16px;
-  line-height: 18px;
-  padding: 0 20px;
+  padding: 0 15px;
   text-transform: uppercase;
   color: $color-desc;
   border: 1px solid $color-border-list6;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: $color-border-list4;
+  }
+
+  &:focus {
+    border-color: $color-desc;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &--validable:invalid {
+    border-color: $color-border-invalid;
+
+    & + svg {
+      stroke: $color-border-invalid;
+    }
+  }
+}
+
+.input[type="number"] {
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
 }

@@ -1,38 +1,44 @@
 .extra-goods__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  width: 320px;
+  margin: 3px auto 32px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 708px;
-    margin-bottom: 69px;
+    margin: 0 auto 75px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin-bottom: 85px;
+    width: 100%;
+    max-width: 1440px;
+    margin-bottom: 90px;
   }
 }
 
 .extra-goods__title {
-  @include title;
-  margin-bottom: 49px;
-  font-family: $oswald400;
+  display: table;
+  position: relative;
   text-align: left;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: $color-default-black;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  margin-left: 20px;
 
-  @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 36px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 40px;
   }
 }
 
 .extra-goods__list {
   @include list-reset;
+  margin: 0 20px 0 20px;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 50px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 896px;
@@ -42,14 +48,14 @@
 
 .extra-goods__item {
   border-top: 1px solid $color-border-list4;
-  padding: 12px 0 19px;
+  padding: 10px 0 19px;
 
   &:last-child {
     border-bottom: 1px solid $color-border-list4;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 28px 38px;
+    padding: 25px 36px 28px;
     border: 1px solid $color-border-list4;
     border-bottom: none;
   }
@@ -58,18 +64,22 @@
     display: grid;
     grid-template-columns: 610px 244px;
     column-gap: 40px;
-    padding: 15px 0 17px;
+    padding: 15px 0 15px;
+    border: none;
+    border-top: 1px solid $color-border-list4;
+    margin-left: 110px;
   }
 }
 
 .extra-goods__table {
+  margin-bottom: 10px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -77,7 +87,7 @@
 .extra-goods__row {
   display: grid;
   grid-template-columns: 140px 140px;
-  row-gap: 13px;
+  row-gap: 8px;
   color: $color-desc;
 
   @media (min-width: $tablet-width) {
@@ -123,7 +133,7 @@
     line-height: 20px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }
@@ -135,8 +145,15 @@
   justify-self: end;
 
   @media (min-width: $tablet-width) {
+    width: 80px;
     text-align: end;
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.extra-goods__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 }
